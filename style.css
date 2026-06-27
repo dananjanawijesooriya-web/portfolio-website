@@ -56,11 +56,6 @@ body{
     text-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
 }
 
-@media (max-width: 768px) {
-    .nav-toggle {
-        display: block;
-    }
-}
 
 .hero{
     height: 100vh;
@@ -97,16 +92,6 @@ body{
     font-size: 06px;
     color: #94a3b8;
     max-width: 600px;
-}
-
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 32px;
-    }
-
-    .hero-content p {
-        font-size: 15px;
-    }
 }
 
 .section-title{
@@ -156,12 +141,77 @@ body{
     columns: #e5e7eb;
 }
 
-@media(max-width: 768px){
+
+
+.education{
+    padding: 80px 10%;
+}
+
+.education-card{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: #12121a;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    transition: .3s;
+}
+
+.education-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.25);
+}
+
+.education-year{
+    min-width: 160px;
+    background: #a855f7;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.education-details h3{
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.education-details h4{
+    color: #a855f7;
+    margin-bottom: 12px;
+}
+
+.education-details p{
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
     .about-container{
         flex-direction: column;
         text-align: center;
     }
     .about-card{
+        width: 100%;
+    }
+     .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+    .education-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .education-year {
         width: 100%;
     }
 }
