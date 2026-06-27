@@ -26,13 +26,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Configure GitHub Pages
+      - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true   # ✅ important fix for new GitHub behavior
 
-      - name: Upload website files
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: .   # or ./dist if you are using build tools
 
       - name: Deploy to GitHub Pages
         id: deployment
