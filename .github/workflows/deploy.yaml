@@ -29,12 +29,12 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
-          enablement: true   # ✅ important fix for new GitHub behavior
+          enablement: true   
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .   # or ./dist if you are using build tools
+          path: .   
 
       - name: Deploy to GitHub Pages
         id: deployment
