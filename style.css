@@ -299,6 +299,66 @@ body{
     background: #9333ea;
 }
 
+.contact{
+    padding: 80px 10%;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-card{
+    max-width: 700px;
+    width: 100%;
+    background: #12121a;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    border-radius: 15px;
+    padding: 40px;
+    transition: .3s;
+}
+
+.contact-card:hover{
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.25);
+}
+
+.contact-card h3{
+    color: #a855f7;
+    margin-bottom: 20px;
+}
+
+.contact-card p{
+    color: #d1d5db;
+    line-height: 1.8;
+}
+
+.contact-info{
+    margin: 30px 0;
+}
+
+.contact-info p{
+    margin-bottom: 20px;
+}
+
+.social-links{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-links a{
+    text-decoration: none;
+    padding: 12px 22px;
+    background: #a855f7;
+    color: white;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.social-links a:hover{
+    background: #9333ea;
+}
+
 @media (max-width: 768px) {
     .nav-toggle {
         display: block;
