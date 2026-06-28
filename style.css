@@ -233,6 +233,72 @@ body{
     font-size: 14px;
 }
 
+.projects{
+    padding: 80px 10%;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.projects-card{
+    background: #12121a;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    transition: 0.3s ease;
+}
+
+.projects-card:hover{
+    transform: translate(-8px);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+    border-color: #a855f7;
+}
+
+.projects-card h3{
+    color: #a855f7;
+    margin-bottom: 15px;
+}
+
+.projects-card p{
+    color: #d1d5db;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.teck-stack{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.teck-stack span{
+    background: rgba(168, 85, 247, 0.15);
+    color: #e5e7eb;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.github-btn{
+    display: inline-block;
+    text-decoration: none;
+    background: #a855f7;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.github-btn:hover{
+    background: #9333ea;
+}
+
 @media (max-width: 768px) {
     .nav-toggle {
         display: block;
