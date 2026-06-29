@@ -1,5 +1,5 @@
 const navToggle=document.getElementById("navToggle");
-const navLinks=document.getElementById("navLinks");
+const navLinks=document.getElementById(".nav-links");
 
 navToggle.addEventListener("click", ()=>{
     navLinks.classList.toggle("active");
@@ -16,6 +16,9 @@ const observer=new IntersectionObserver((entries) =>{
 },{
     threshold: 0.2
 });
+
+const sections = document.querySelectorAll(".fade-in");
+
 SpeechRecognitionResult.forEach((section)=>{
     observer.observe(section);
 });
