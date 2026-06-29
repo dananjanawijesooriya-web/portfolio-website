@@ -431,4 +431,85 @@ body{
     .skills-container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .navbar{
+        padding: 15px 5%;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero{
+        padding: 120px 5% 80px;
+        text-align: center;
+    }
+
+    hero h1{
+        font-size: 2.3rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
+
+    .about{
+        padding: 60px 5%;
+    }
+
+    .about-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .education{
+        padding: 60px 5%;
+    }
+
+    .education-card{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .education-year{
+        width: 100%;
+    }
+
+    .skills{
+        padding: 60px 5%;
+    }
+
+    .skills-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .projects{
+        padding: 60px 5%;
+    }
+
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
+
+    .contact{
+        padding: 60px 5%;
+    }
+
+    .contact-card{
+        padding: 25px;
+    }
+
+    .social-links{
+        justify-content: center;
+    }
+
+    .footer{
+        padding: 30px 5%;
+    }
+
+    .footer-links{
+        flex-direction: column;
+        gap: 15px;
+    }
 }
