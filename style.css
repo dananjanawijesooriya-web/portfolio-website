@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: sans-serif;
     margin:0;
@@ -27,7 +31,7 @@ body{
 
 .nav-links li a{
     text-decoration: none;
-    color: #e5e7eb;
+    color: #ffffff;
     font-weight: 500;
     transition: 0.3s;
     position: relative;
@@ -46,6 +50,10 @@ body{
     height: 2px;
     background: #a855f7;
     transition: 0.3s;
+}
+
+.nav-links a::hover::after{
+    width: 100%;
 }
 
 .nav-toggle {
@@ -155,7 +163,7 @@ body{
     border: 1px solid rgba(168, 85, 247, 0.2);
     border-radius: 15px;
     padding: 30px;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 .education-card:hover{
@@ -315,10 +323,11 @@ body{
     border: 1px solid rgba(168, 85, 247, 0.2);
     border-radius: 15px;
     padding: 40px;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 .contact-card:hover{
+    transform: translateY(-8px);
     box-shadow: 0 0 20px rgba(168, 85, 247, 0.25);
 }
 
@@ -357,6 +366,17 @@ body{
 
 .social-links a:hover{
     background: #9333ea;
+}
+
+.github-btn,
+.social-links a{
+    transition: .3s ease;
+}
+
+.github-btn:hover,
+.social-links a:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
 }
 
 .footer{
@@ -399,6 +419,34 @@ body{
     margin-top: 30px;
     font-size: 14px;
     color: #94a3b8;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #0b0b12;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #a855f7;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #9333ea;
+}
+
+.fade-in{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all .8s ease;
+}
+
+.fade-in.show{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @media (max-width: 768px) {
