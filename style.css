@@ -261,7 +261,7 @@ body{
 }
 
 .project-card:hover{
-    transform: translate(-8px);
+    transform: translateY(-8px);
     box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
     border-color: #a855f7;
 }
@@ -495,7 +495,7 @@ body{
         text-align: center;
     }
 
-    hero h1{
+    .hero h1{
         font-size: 2.3rem;
     }
 
